@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>冬鲨科技</title>
+    <script src="js/index.js"> </script>
+    <script>
+      //初始化
+      function run() 　　
+      { 
+        var cdk=getQueryVariable("cdk");
+        var arr=JSON.parse(pass);
+
+        if(cdk)
+        {
+          if(arr.indexOf(cdk)>=0)
+          {
+            document.body.innerText = 1;
+          }
+          else
+          {
+            document.body.innerText = 2;
+          }
+        }
+        else
+        {
+          sdocument.body.innerText =2;
+        }
+      }
+      function getQueryVariable(variable)
+      {
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+      }
+      window.onload=run;      
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
