@@ -10,8 +10,7 @@
   <body>
     <script>
       //初始化
-      function run() 　　
-      { 
+
         var cdk=getQueryVariable("cdk");
         var arr=JSON.parse(pass);
 
@@ -30,7 +29,7 @@
         {
           document.write(0);
         }
-      }
+  
       function getQueryVariable(variable)
       {
        var query = window.location.search.substring(1);
@@ -40,8 +39,7 @@
                if(pair[0] == variable){return pair[1];}
        }
        return(false);
-      }
-      window.onload=run;      
+      }    
     </script>
   </body>
 </html>
