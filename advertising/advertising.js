@@ -1,1 +1,1 @@
-[{"advertising_1":"https://shop335983331.taobao.com"},{"advertising_2":""}]
+[{"advertising_1":"https://shop335983331.taobao.com"}]
